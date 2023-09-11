@@ -1,5 +1,5 @@
 {
-  "name": "@digicatapult/wasp-open-api",
+  "name": "@digicatapult/openapi-merger",
   "version": "0.1.50",
   "description": "Amalgamated API specs for WASP",
   "main": "app/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digicatapult/wasp-open-api.git"
+    "url": "git+https://github.com/digicatapult/openapi-merger.git"
   },
   "engines": {
     "node": ">=18.13.0"
@@ -25,9 +25,9 @@
   "license": "Apache-2.0",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/digicatapult/wasp-open-api/issues"
+    "url": "https://github.com/digicatapult/openapi-merger/issues"
   },
-  "homepage": "https://github.com/digicatapult/wasp-open-api#readme",
+  "homepage": "https://github.com/digicatapult/openapi-merger#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
