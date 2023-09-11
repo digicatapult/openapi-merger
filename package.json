@@ -1,6 +1,6 @@
 {
   "name": "@digicatapult/openapi-merger",
-  "version": "0.1.50",
+  "version": "0.0.1",
   "description": "Amalgamated API specs for WASP",
   "main": "app/index.js",
   "scripts": {
