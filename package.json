@@ -19,7 +19,7 @@
     "node": ">=18.13.0"
   },
   "keywords": [
-    "WASP"
+    "openapi"
   ],
   "author": "Digital Catapult",
   "license": "Apache-2.0",
