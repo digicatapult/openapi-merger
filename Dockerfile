@@ -8,7 +8,7 @@ FROM node:lts-alpine
 ARG LOGLEVEL
 ENV NPM_CONFIG_LOGLEVEL ${LOGLEVEL}
 
-WORKDIR /wasp-open-api
+WORKDIR /openapi-merger
 
 # Install base dependencies
 COPY . .
