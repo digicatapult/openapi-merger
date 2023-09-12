@@ -1,6 +1,6 @@
 # openapi-merger
 
-Serves a single merged [`OpenAPI`](https://swagger.io/specification/) spec based on any number of OpenAPI specs defined under `paths` in [`values.yaml`](helm/wasp-open-api/values.yaml).
+Serves a single merged [`OpenAPI`](https://swagger.io/specification/) spec based on any number of OpenAPI specs defined under `paths` in [`values.yaml`](https://github.com/digicatapult/helm-charts/blob/main/charts/wasp-open-api/values.yaml).
 
 Includes a node service with three endpoints:
 
