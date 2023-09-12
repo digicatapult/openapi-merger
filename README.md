@@ -1,6 +1,6 @@
 # openapi-merger
 
-Serves a single merged [`OpenAPI`](https://swagger.io/specification/) spec based on any number of openapi OpenAPI specs defined under `paths` in [`values.yaml`](helm/openapi-merger/values.yaml).
+Serves a single merged [`OpenAPI`](https://swagger.io/specification/) spec based on any number of openapi OpenAPI specs defined under `paths` in [`values.yaml`](helm/wasp-open-api/values.yaml).
 
 Includes a node service with three endpoints:
 
@@ -8,7 +8,7 @@ Includes a node service with three endpoints:
 - `/swagger` to view the merged API spec in Swagger
 - POST `/set-api-docs` to set the merged API spec
 
-The merge is automated via a Helm [`CronJob`](helm/openapi-merger/templates/cronjob.yaml). that runs [`openapi-merge-cli`](https://www.npmjs.com/package/openapi-merge-cli) then posts the merged doc to `set-api-docs` every minute.
+The merge is automated via a Helm [`CronJob`](helm/wasp-open-api/templates/cronjob.yaml). that runs [`openapi-merge-cli`](https://www.npmjs.com/package/openapi-merge-cli) then posts the merged doc to `set-api-docs` every minute.
 
 ## Getting started
 
