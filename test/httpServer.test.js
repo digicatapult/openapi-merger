@@ -39,10 +39,19 @@ describe('API docs', async function () {
       context.response = await context.request.post('/set-api-docs').send(apiDoc)
       expect(context.response.status).to.equal(200)
     })
+
+    it('should return 200 with valid OpenAPI doc', async function () {
+      context.response = await context.request.post('/set-api-docs').send({
+        ...apiDoc,
+        info: new Array(200000).fill('a').join(''),
+      })
+      expect(context.response.status).to.equal(200)
+    })
   })
 
   describe('Get API docs', async function () {
     it('should return API docs', async function () {
+      await context.request.post('/set-api-docs').send(apiDoc)
       context.response = await context.request.get('/api-docs')
       expect(context.response.status).to.equal(200)
       expect(context.response.body).to.deep.equal(apiDoc)
