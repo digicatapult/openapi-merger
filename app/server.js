@@ -14,6 +14,7 @@ async function createHttpServer() {
   const requestLogger = pinoHttp({ logger })
 
   app.use(bodyParser.json({ type: 'application/json' }))
+  app.use(express.json({ limit: '1mb' }))
 
   app.use((req, res, next) => {
     if (req.path !== '/health') requestLogger(req, res)
