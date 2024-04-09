@@ -39,3 +39,4 @@ npm test
 | LOG_LEVEL          |    N     |      `info`       | Logging level. Valid values are [`trace`, `debug`, `info`, `warn`, `error`, `fatal`] |
 | PORT               |    N     |       `80`        | Port on which the service will listen                                                |
 | API_DOCS_FILE_PATH |    N     | `./api-docs.json` | Location of the api-docs file on the filesystem                                      |
+| API_DOCS_URL_PATH  |    N     |    `/api-docs`    | URL of the api-docs                                                                  |
