@@ -51,7 +51,7 @@ async function createHttpServer() {
     }
   })
 
-  app.get('/api-docs', async (req, res) => {
+  app.get(API_DOCS_URL_PATH, async (req, res) => {
     fs.readFile(API_DOCS_FILE_PATH, (err, data) => {
       if (err) {
         res.status(500).send({ error: 'failed to read OpenAPI doc' })
