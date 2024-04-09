@@ -52,7 +52,7 @@ describe('API docs', async function () {
   describe('Get API docs', async function () {
     it('should return API docs', async function () {
       await context.request.post('/set-api-docs').send(apiDoc)
-      context.response = await context.request.get('/api-docs')
+      context.response = await context.request.get('/test/api-docs')
       expect(context.response.status).to.equal(200)
       expect(context.response.body).to.deep.equal(apiDoc)
     })
