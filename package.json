@@ -1,6 +1,6 @@
 {
   "name": "@digicatapult/openapi-merger",
-  "version": "1.0.70",
+  "version": "1.0.71",
   "description": "Amalgamated API specs for openapi",
   "main": "app/index.js",
   "scripts": {
