@@ -34,9 +34,9 @@ npm test
 
 `openapi-merger` is configured primarily using environment variables as follows:
 
-| variable           | required |      default      | description                                                                          |
-| :----------------- | :------: | :---------------: | :----------------------------------------------------------------------------------- |
-| LOG_LEVEL          |    N     |      `info`       | Logging level. Valid values are [`trace`, `debug`, `info`, `warn`, `error`, `fatal`] |
-| PORT               |    N     |       `80`        | Port on which the service will listen                                                |
-| API_DOCS_FILE_PATH |    N     | `./api-docs.json` | Location of the api-docs file on the filesystem                                      |
-| API_DOCS_URL_PATH  |    N     |    `/api-docs`    | URL to access the api-docs                                                           |
+| variable              | required |      default      | description                                                                          |
+| :-------------------- | :------: | :---------------: | :----------------------------------------------------------------------------------- |
+| LOG_LEVEL             |    N     |      `info`       | Logging level. Valid values are [`trace`, `debug`, `info`, `warn`, `error`, `fatal`] |
+| PORT                  |    N     |       `80`        | Port on which the service will listen                                                |
+| API_DOCS_FILE_PATH    |    N     | `./api-docs.json` | Location of the api-docs file on the filesystem                                      |
+| API_PUBLIC_URL_PREFIX |    N     |        ``         | Public prefix to prepend for accessing api-docs                                      |
