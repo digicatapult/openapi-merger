@@ -7,7 +7,7 @@ import fs from 'fs'
 import env from './env.js'
 import logger from './logger.js'
 
-const { PORT, API_DOCS_FILE_PATH } = env
+const { PORT, API_DOCS_FILE_PATH, API_DOCS_URL_PATH } = env
 
 async function createHttpServer() {
   const app = express()
@@ -28,7 +28,7 @@ async function createHttpServer() {
     swaggerOptions: {
       urls: [
         {
-          url: `/api-docs`,
+          url: API_DOCS_URL_PATH,
         },
       ],
     },
@@ -51,7 +51,7 @@ async function createHttpServer() {
     }
   })
 
-  app.get('/api-docs', async (req, res) => {
+  app.get(API_DOCS_URL_PATH, async (req, res) => {
     fs.readFile(API_DOCS_FILE_PATH, (err, data) => {
       if (err) {
         res.status(500).send({ error: 'failed to read OpenAPI doc' })

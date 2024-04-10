@@ -12,6 +12,7 @@ const vars = envalid.cleanEnv(
     LOG_LEVEL: envalid.str({ default: 'info', devDefault: 'debug' }),
     PORT: envalid.port({ default: 80, devDefault: 3000 }),
     API_DOCS_FILE_PATH: envalid.str({ default: './api-docs.json' }),
+    API_DOCS_URL_PATH: envalid.str({ default: '/api-docs' }),
   },
   {
     strict: true,
