@@ -7,7 +7,7 @@ import fs from 'fs'
 import env from './env.js'
 import logger from './logger.js'
 
-const { PORT, API_DOCS_FILE_PATH, API_PUBLIC_URL_PREFIX } = env
+const { PORT, API_DOCS_FILE_PATH, API_PUBLIC_URL_PREFIX, OAUTH_CLIENT_ID, OAUTH_APP_NAME, OAUTH_USE_PKCE } = env
 
 async function createHttpServer() {
   const app = express()
@@ -32,6 +32,13 @@ async function createHttpServer() {
         },
       ],
     },
+  }
+
+  if (OAUTH_CLIENT_ID || OAUTH_APP_NAME || OAUTH_USE_PKCE) {
+    options.swaggerOptions.oauth = {}
+    options.swaggerOptions.oauth.clientId = OAUTH_CLIENT_ID || undefined
+    options.swaggerOptions.oauth.appName = OAUTH_APP_NAME || undefined
+    options.swaggerOptions.oauth.usePkceWithAuthorizationCodeGrant = OAUTH_USE_PKCE
   }
 
   app.use(`/swagger`, swaggerUi.serve, swaggerUi.setup(null, options))
