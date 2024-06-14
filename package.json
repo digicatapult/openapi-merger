@@ -1,6 +1,6 @@
 {
   "name": "@digicatapult/openapi-merger",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "description": "Amalgamated API specs for openapi",
   "main": "app/index.js",
   "scripts": {
@@ -48,7 +48,7 @@
     "mocha": "^10.4.0",
     "nodemon": "^3.1.3",
     "pino-colada": "^2.2.2",
-    "prettier": "^3.3.1",
+    "prettier": "^3.3.2",
     "supertest": "^7.0.0"
   }
 }
