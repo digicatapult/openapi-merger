@@ -1,6 +1,6 @@
 {
   "name": "@digicatapult/openapi-merger",
-  "version": "1.1.43",
+  "version": "1.1.44",
   "description": "Amalgamated API specs for openapi",
   "main": "app/index.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.25.1",
+    "@babel/eslint-parser": "^7.25.7",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.11.1",
     "c8": "^10.1.2",
