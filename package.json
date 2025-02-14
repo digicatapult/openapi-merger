@@ -1,6 +1,6 @@
 {
   "name": "@digicatapult/openapi-merger",
-  "version": "1.1.85",
+  "version": "1.1.86",
   "description": "Amalgamated API specs for openapi",
   "main": "app/index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/digicatapult/openapi-merger#readme",
   "dependencies": {
-    "body-parser": "^2.0.2",
+    "body-parser": "^2.1.0",
     "dotenv": "^16.4.7",
     "envalid": "^8.0.0",
     "express": "^4.21.2",
@@ -44,7 +44,7 @@
     "c8": "^10.1.3",
     "chai": "^5.1.2",
     "depcheck": "^1.4.7",
-    "eslint": "^9.20.0",
+    "eslint": "^9.20.1",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "globals": "^15.14.0",
