@@ -1,6 +1,6 @@
 {
   "name": "@digicatapult/openapi-merger",
-  "version": "1.1.123",
+  "version": "1.1.124",
   "description": "Amalgamated API specs for openapi",
   "main": "app/index.js",
   "scripts": {
@@ -48,10 +48,10 @@
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.5.0",
     "globals": "^16.2.0",
-    "mocha": "^11.7.0",
+    "mocha": "^11.7.1",
     "nodemon": "^3.1.10",
     "pino-colada": "^2.2.2",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.0",
     "supertest": "^7.1.1"
   }
 }
