@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.19
 
-FROM node:lts-alpine
+FROM node:24-alpine
 
 # Allow log level to be controlled. Uses an argument name that is different
 # from the existing environment variable, otherwise the environment variable
