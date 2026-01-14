@@ -1,6 +1,6 @@
 {
   "name": "@digicatapult/openapi-merger",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "description": "Amalgamated API specs for openapi",
   "main": "app/index.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "dotenv": "^17.2.3",
     "envalid": "^8.1.1",
     "express": "^5.2.1",
-    "pino": "^10.1.0",
+    "pino": "^10.1.1",
     "pino-http": "^11.0.0",
     "swagger-ui-express": "^5.0.1"
   },
