@@ -7,11 +7,15 @@ on:
 jobs:
   static-checks-npm:
     uses: digicatapult/shared-workflows/.github/workflows/static-checks-npm.yml@main
+    permissions:
+      security-events: write
     with:
       matrix_commands: '["lint", "depcheck"]'
 
   tests-npm:
     uses: digicatapult/shared-workflows/.github/workflows/tests-npm.yml@main
+    permissions:
+      pull-requests: write
     with:
       coverage: true
       docker_compose_file: ''
@@ -23,16 +27,14 @@ jobs:
       - tests-npm
     uses: digicatapult/shared-workflows/.github/workflows/build-docker.yml@main
     permissions:
+      contents: read
       packages: write
-      contents: write
       security-events: write
-      actions: read
 
   generate-sbom-npm:
     needs:
       - build-docker
     uses: digicatapult/shared-workflows/.github/workflows/generate-sbom-npm.yml@main
-    permissions:
-      contents: read
+    permissions: {}
     with:
       additional_args: "--ignore-npm-errors"
