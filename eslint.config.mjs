@@ -1,6 +1,5 @@
 import prettier from 'eslint-plugin-prettier'
 import globals from 'globals'
-import babelParser from '@babel/eslint-parser'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import js from '@eslint/js'
@@ -29,13 +28,8 @@ export default [
         ...globals.node,
       },
 
-      parser: babelParser,
       ecmaVersion: 12,
       sourceType: 'module',
-
-      parserOptions: {
-        requireConfigFile: false,
-      },
     },
 
     rules: {
