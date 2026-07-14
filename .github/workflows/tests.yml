@@ -26,6 +26,8 @@ jobs:
       - static-checks-npm
       - tests-npm
     uses: digicatapult/shared-workflows/.github/workflows/build-docker.yml@main
+    with:
+      scan_container: true
     permissions:
       contents: read
       packages: write
