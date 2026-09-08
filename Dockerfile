@@ -8,7 +8,7 @@ RUN npm install -g npm@12.0.1
 # from the existing environment variable, otherwise the environment variable
 # shadows the argument.
 ARG LOGLEVEL
-ENV NPM_CONFIG_LOGLEVEL ${LOGLEVEL}
+ENV NPM_CONFIG_LOGLEVEL=${LOGLEVEL}
 
 WORKDIR /openapi-merger
 
